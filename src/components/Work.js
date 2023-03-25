@@ -44,10 +44,6 @@ const useStyles = makeStyles(() => ({
 }));
 export default function Work() {
 
-    // const theme = useTheme();
-    // const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-
-
     const classes = useStyles();
     return (
         <Container maxWidth className={classes.container} sx={{}}>
@@ -59,7 +55,7 @@ export default function Work() {
             </Box>
             <Box sx={{ width: "100%", position: "relative" }}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Item>
                             <img
                                 src={Starbucks}
@@ -67,8 +63,13 @@ export default function Work() {
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             />
                         </Item>
+                        <Box sx={{color: "#fff"}}>
+                            <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Starbucks</h1>
+                            <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
+                        </Box>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Item>
                             <img
                                 src={Nike}
@@ -76,9 +77,13 @@ export default function Work() {
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             />
                         </Item>
-                        <h6>DIGITAL MARKETING</h6>
+                        <Box sx={{color: "#fff"}}>
+                            <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Nike</h1>
+                            <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
+                        </Box>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Item>
                             <img
                                 src={Nike}
@@ -86,8 +91,13 @@ export default function Work() {
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             />
                         </Item>
+                        <Box sx={{color: "#fff"}}>
+                            <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Nike</h1>
+                            <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
+                        </Box>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Item>
                             <img
                                 src={Starbucks}
@@ -95,6 +105,11 @@ export default function Work() {
                                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                             />
                         </Item>
+                        <Box sx={{color: "#fff"}}>
+                            <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Starbucks</h1>
+                            <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
+                        </Box>
                     </Grid>
                 </Grid>
             </Box>

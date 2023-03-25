@@ -17,7 +17,7 @@ const options = [
 
 export default function FooterTwo() {
   return (
-    <Box sx={{ bgcolor: "#301E4E", py: 4, fontFamily: "Playfair Display" }}>
+    <Box sx={{ bgcolor: "#301E4E", py: 4, fontFamily: "Playfair Display", marginTop: "20px" }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={3} md={2}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
