@@ -82,14 +82,14 @@ const Booking = () => {
         </Card>
       </Container>
 
-      <Container maxWidth sx={{ marginTop: "200px" }}>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
+      <Container maxWidth sx={{ marginTop: "200px", padding: "0" }}>
+        <Grid container spacing={2} sx={{padding: "0"}}>
+          <Grid item xs={6} sx={{padding: "0"}}>
             <Box
               style={{ width: "600px" }}
-              sx={{ display: "flex", overflow: "hidden", marginLeft: "30px" }}
+              sx={{ display: "flex", overflow: "hidden", marginLeft: "30px", flexDirection: "row", padding: "0" }}
             >
-              <CardMedia component="img" image={ellipse} alt="green iguana" sx={{display: "flex"}}/>
+              <CardMedia component="img" image={ellipse} alt="green iguana" sx={{display: "flex", padding: "0"}}/>
               <Typography
                 sx={{
                   fontSize: "99px",
