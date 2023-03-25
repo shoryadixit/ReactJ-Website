@@ -1,85 +1,50 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { makeStyles } from "@mui/styles";
+// import { makeStyles } from "@mui/styles";
+import { Grid, Typography, Stack } from "@mui/material";
 
+const options = [
+  "Home Page",
+  "About Us",
+  "Book Audit",
+  "Contact Us",
+  "Our Services",
+  "Blogs"
+];
 
-const useStyles = makeStyles(() => ({
-    container: {
-        display: "flex",
-        marginTop: "30px",
-        background: "#301E4E",
-        alignItems: "flex-start",
-        flexDirection: "column",
-        height: "auto",
-        padding: "80px"
-    },
-    item: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-start",
-        padding: "0px",
-        gap: "50px",
-        width: "70%"
-    },
-}));
 export default function FooterTwo() {
-    const classes = useStyles();
     return (
-        <Container maxWidth className={classes.container}>
-            <Box>
-                <Typography variant="h4" sx={{
-                    color: "#fff",
-                    fontFamily: "Playfair display",
-                    fontStyle: "normal",
-                    fontSize: "35px",
-                    lineHeight: "47px",
-                    letterSpacing: "0.0025em",
-                    position: "relative"
-
-                }}>
-                    Logo
-                </Typography>
-            </Box>
-            <Box sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                padding: "0px",
-                gap: "32px",
-                color: "#fff",
-                fontFamily: "Playfair Display",
-                fontSize: "1.7vw",
-            }}>
-                <Grid spacing={3} className={classes.item}>
-                    <Grid item xs={1}>
-                        Home Page
-                    </Grid>
-                    <Grid item>
-                        About Us
-                    </Grid>
-                    <Grid item>
-                        Book Audit
-                    </Grid>
-                    <Grid item>
-                        Contact Us
-                    </Grid>
-                    <Grid item>
-                        Our Services
-                    </Grid>
-                    <Grid item>
-                        Blogs
+        <Box sx={{ bgcolor: "#301E4E", py: 4, fontFamily: "Playfair Display"}}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} sm={3} md={2}>
+                    <Box sx={{ display: "flex", alignItems: "center" }}>
+                        <Typography variant="h6" sx={{ color: "#fff", margin: "auto", fontFamily: "Playfair Display" }}>
+                            Logo
+                        </Typography>
+                    </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <Grid container spacing={1}  sx={{  }}>
+                        {options.map((option, index) => (
+                            <Grid key={index} item xs={6} sm={4} md={2}>
+                                <Typography variant="subtitle1" sx={{ color: "#fff", display: "flex", justifyContent: "center", margin: "0 auto", fontFamily: "Playfair Display" }}>
+                                    {option}
+                                </Typography>
+                            </Grid>
+                        ))}
                     </Grid>
                 </Grid>
-            </Box>
-
-            <Box>
-                <InstagramIcon/>
-                <FacebookIcon />
-                <TwitterIcon />
-            </Box>
-        </Container>
+                <Grid item xs={12} md={2} sm={6} sx={{display: "flex", margin: "0 auto", justifyContent: "center"}}>
+                    <Stack direction="row" spacing={2} sx={{ color: "#fff", fontFamily: "Playfair Display"}}>
+                        <InstagramIcon width="80" height="80" />
+                        <FacebookIcon width="80" height="80" />
+                        <TwitterIcon width="80" height="80" />
+                    </Stack>
+                </Grid>
+            </Grid>
+        </Box>
     );
 }
