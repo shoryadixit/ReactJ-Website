@@ -3,7 +3,6 @@ import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-// import { makeStyles } from "@mui/styles";
 import { Grid, Typography, Stack } from "@mui/material";
 
 const options = [
