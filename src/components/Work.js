@@ -65,7 +65,7 @@ export default function Work() {
                         </Item>
                         <Box sx={{color: "#fff"}}>
                             <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
-                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Starbucks</h1>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400", color: "#E7D7F6",}}>STARBUCKS</h1>
                             <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
                         </Box>
                     </Grid>
@@ -79,7 +79,7 @@ export default function Work() {
                         </Item>
                         <Box sx={{color: "#fff"}}>
                             <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
-                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Nike</h1>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400", color: "#E7D7F6"}}>Nike</h1>
                             <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
                         </Box>
                     </Grid>
@@ -93,7 +93,7 @@ export default function Work() {
                         </Item>
                         <Box sx={{color: "#fff"}}>
                             <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
-                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Nike</h1>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400", color: "#E7D7F6"}}>Nike</h1>
                             <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
                         </Box>
                     </Grid>
@@ -107,7 +107,7 @@ export default function Work() {
                         </Item>
                         <Box sx={{color: "#fff"}}>
                             <h6 style={{color: "#FF6E6C", margin: "0",}}>Digital Marketing</h6>
-                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400"}}>Starbucks</h1>
+                            <h1 style={{fontFamily: "Playfair Display", fontStyle: "normal", fontWeight: "400", color: "#E7D7F6"}}>STARBUCKS</h1>
                             <h2 style={{fontSize: "20px"}}>Our ad campaign brought 80% footfall to the company   </h2>
                         </Box>
                     </Grid>

@@ -29,17 +29,16 @@ const useStyles = makeStyles(() => ({
   },
 
   inner: {
-    position: "absolute",
     display: "flex",
-    background: "rgba(255, 255, 255, 0.44)",
     flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "cener",
+    alignItems: "center",
+    gap: "4px",
+    position: "absolute",
     width: "100%",
-    textAlign: "center",
-    top: "150px",
-    height: "150px",
-    margin: "0 auto",
+    height: "100px",
+    top: "120px",
+    paddingBottom: "15px",
+    background: "rgba(255, 255, 255, 0.44)",
   }
 }));
 
@@ -88,6 +87,7 @@ function Banner() {
               color: "#301E4E",
               marginLeft: "50px",
               marginTop: "30px",
+              width: "auto",
             }}
           >
             Helping you stand out in a crowded market
@@ -97,19 +97,15 @@ function Banner() {
         <div className={classes.inner}>
           <Typography
             style={{
-              fontSize: "53px",
-              fontFamily: "Playfair Display",
-              display: "flex",
-              position: "relative",
-              color: "#301E4E",
-              lineHeight: "30px",
+              fontFamily: 'Playfair Display',
               fontStyle: "normal",
-              fontWeight: "686",
+              fontSize: "30px",
+              fontWeight: "700",
               textAlign: "center",
-              margin: "0 auto",
+              width: "90%"
             }}
           >
-            We are 
+            We are
             <span
               style={{
                 color: "#B7364A",
@@ -119,20 +115,22 @@ function Banner() {
               Extensive.
             </span>
           </Typography>
-          <div style={{display: "flex"}}>
-          <Typography
-            style={{
-              fontSize: "40px",
-              fontFamily: "Playfair Display",
-              fontStyle: "normal",
-              lineHeight: "65px",
-              color: "#301E4E",
-              margin: "0 auto",
-              padding: "auto"
-            }}
-          >
-            Helping you stand out in a crowded market
-          </Typography>
+          <div style={{ display: "flex", width: "90%"}}>
+            <Typography
+              style={{
+                fontFamily: 'Playfair Display',
+                fontStyle: "normal",
+                display: "flex",
+                flexDirection: "row",
+                alignContent: "center",
+                alignItems: "center",
+                fontWeight: "500",
+                fontSize: "24px",
+                margin: "0 auto",
+              }}
+            >
+              Helping you stand out in a crowded market
+            </Typography>
           </div>
         </div>
       )}

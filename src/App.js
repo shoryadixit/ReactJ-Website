@@ -9,6 +9,7 @@ import Partners from "./components/Partners.js";
 import Testimonials from "./components/Testimonials";
 import FooterOne from "./components/FooterOne.js";
 import FooterTwo from "./components/FooterTwo.js";
+import WhatWeDo from "./components/WhatWeDo";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <Banner/>
       <BannerNext />
+      <WhatWeDo />
       <Work />
       <Partners />
       <Testimonials />

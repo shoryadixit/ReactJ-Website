@@ -61,7 +61,7 @@ export default function ButtonAppBar() {
                     padding: "10px",
                     backgroundColor: "#301E4E",
                     color: "#fff",
-                    height: "500px",
+                    maxHeight: "auto",
                   },
                 }}
               >
@@ -74,17 +74,19 @@ export default function ButtonAppBar() {
                     color: "#E7D7F6",
                   }}
                 />
-                <List>
+                <List sx={{margin
+                :"20px", fontWeight: "800"}}>
                   <ListItemButton>
                     <ListItemText>
                       <h3
                         style={{
                           fontFamily: "Playfair Display",
                           fontStyle: "normal",
-                          fontWeight: "400",
+                          fontWeight: "800",
                           fontSize: "62px",
                           lineHeight: "20px",
                           letterSpacing: "-0.005em",
+                          color: "#E7D7F6"
                         }}
                       >
                         Services
@@ -97,10 +99,11 @@ export default function ButtonAppBar() {
                         style={{
                           fontFamily: "Playfair Display",
                           fontStyle: "normal",
-                          fontWeight: "400",
+                          fontWeight: "800",
                           fontSize: "62px",
                           lineHeight: "20px",
                           letterSpacing: "-0.005em",
+                          color: "#E7D7F6"
                         }}
                       >
                         About Us
@@ -113,10 +116,11 @@ export default function ButtonAppBar() {
                         style={{
                           fontFamily: "Playfair Display",
                           fontStyle: "normal",
-                          fontWeight: "400",
+                          fontWeight: "800",
                           fontSize: "62px",
                           lineHeight: "20px",
                           letterSpacing: "-0.005em",
+                          color: "#E7D7F6"
                         }}
                       >
                         Blogs
@@ -129,18 +133,33 @@ export default function ButtonAppBar() {
                         style={{
                           fontFamily: "Playfair Display",
                           fontStyle: "normal",
-                          fontWeight: "400",
+                          fontWeight: "800",
                           fontSize: "62px",
                           lineHeight: "20px",
                           letterSpacing: "-0.005em",
+                          color: "#E7D7F6"
                         }}
                       >
                         Contact Us
                       </h3>
                     </ListItemText>
                   </ListItemButton>
+                  <ListItemButton>
+                  <ListItemButton>
+                    <Button
+                      variant="contained"
+                      fullWidth={true}
+                      style={{
+                        height: "50px",
+                        borderRadius: "15px",
+                        backgroundColor: "#FF6E6C"
+                      }}
+                    >
+                      Contained
+                    </Button>
+                  </ListItemButton>
+                  </ListItemButton>
                 </List>
-                <Button variant="contained">Contained</Button>
               </Drawer>
               <IconButton
                 onClick={() => setOpenDrawer(true)}
@@ -165,6 +184,7 @@ export default function ButtonAppBar() {
                     style={{
                       fontFamily: "Playfair Display",
                       fontStyle: "normal",
+                      textTransform: "capitalize",
                       fontWeight: "400",
                       fontSize: "22px",
                       lineHeight: "83px",
@@ -175,6 +195,7 @@ export default function ButtonAppBar() {
                     label="Work"
                     style={{
                       fontFamily: "Playfair Display",
+                      textTransform: "capitalize",
                       fontStyle: "normal",
                       fontWeight: "400",
                       fontSize: "22px",
@@ -206,7 +227,10 @@ export default function ButtonAppBar() {
                     cursor: "pointer",
                   }}
                 />
-                <List>
+                <List sx={{
+                  margin
+                    : "20px"
+                }}>
                   <ListItemButton>
                     <ListItemText>
                       <h3
@@ -271,18 +295,22 @@ export default function ButtonAppBar() {
                       </h3>
                     </ListItemText>
                   </ListItemButton>
+                  <ListItemButton>
+                    <Button
+                      variant="contained"
+                      fullWidth={true}
+                      style={{
+                        height: "50px",
+                        borderRadius: "15px",
+                        backgroundColor: "#FF6E6C"
+                      }}
+                    >
+                      Contained
+                    </Button>
+                  </ListItemButton>
                 </List>
-                <Button
-                  variant="contained"
-                  fullWidth={true}
-                  style={{
-                    height: "50px",
-                    borderRadius: "15px",
-                    width: "500px",
-                  }}
-                >
-                  Contained
-                </Button>
+
+
               </Drawer>
               <IconButton onClick={() => setOpenDrawer(true)}>
                 <MenuRoundedIcon
