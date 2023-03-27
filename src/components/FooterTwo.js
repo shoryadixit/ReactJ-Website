@@ -16,8 +16,20 @@ const options = [
 
 export default function FooterTwo() {
   return (
-    <Box sx={{ bgcolor: "#301E4E", py: 4, fontFamily: "Playfair Display", marginTop: "20px" }}>
-      <Grid container spacing={2}>
+    <Box
+      sx={{
+        bgcolor: "#301E4E",
+        py: 4,
+        display: "flex",
+        justifyContent: "space-evenly",
+        flexDirection: "column",
+        fontFamily: "Playfair Display",
+        marginTop: "20px",
+        alignItems: "flex-start",
+        padding: "30px",
+      }}
+    >
+      <Grid container spacing={3} sx={{justifyContent: "space-between"}}>
         <Grid item xs={12} sm={3} md={2}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Typography
@@ -42,9 +54,10 @@ export default function FooterTwo() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            marign: "0 auto",
           }}
         >
-          <Grid container spacing={1} sx={{}}>
+          <Grid container spacing={1} sx={{ margin: "0" }}>
             {options.map((option, index) => (
               <Grid key={index} item xs={6} sm={4} md={2}>
                 <Typography
@@ -78,19 +91,22 @@ export default function FooterTwo() {
         </Grid>
         <Grid
           item
-          xs={12}
-          md={2}
+          xs={10}
+          md={1}
           sm={6}
-          sx={{ display: "flex", margin: "0 auto", justifyContent: "center" }}
+          sx={{
+            margin: "0",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            display: "flex",
+            flexDirection: "row",
+            padding: "0px auto",
+          }}
         >
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{ color: "#fff", fontFamily: "Playfair Display" }}
-          >
-            <InstagramIcon width="80" height="80" />
-            <FacebookIcon width="80" height="80" />
-            <TwitterIcon width="80" height="80" />
+          <Stack direction="row" spacing={2} sx={{ color: "#fff" }}>
+            <InstagramIcon width="50" height="50" />
+            <FacebookIcon width="50" height="50" />
+            <TwitterIcon width="50" height="50" />
           </Stack>
         </Grid>
       </Grid>
