@@ -19,14 +19,13 @@ export default function FooterTwo() {
     <Box
       sx={{
         bgcolor: "#301E4E",
-        py: 4,
         display: "flex",
         justifyContent: "space-evenly",
         flexDirection: "column",
         fontFamily: "Playfair Display",
         marginTop: "20px",
         alignItems: "flex-start",
-        padding: "30px",
+        padding: "10px",
       }}
     >
       <Grid container spacing={3} sx={{justifyContent: "space-between"}}>
