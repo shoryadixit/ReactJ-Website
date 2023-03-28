@@ -49,7 +49,7 @@ export default function Work() {
         <Container maxWidth className={classes.container} sx={{}}>
             <Box sx={{ color: "#E2DAEB", padding: "10px" }}>
                 <h1 className={classes.h1}>OUR WORK</h1>
-                <Button className={classes.viewButton} variant="contained" style={{ backgroundColor: "#FF6E6C" }}>
+                <Button  variant="contained" style={{ backgroundColor: "#FF6E6C" }} sx={{display:{lg:"block",md:"block",sm:"block", xs:"none"}}}>
                     View All
                 </Button>
             </Box>
@@ -113,6 +113,9 @@ export default function Work() {
                     </Grid>
                 </Grid>
             </Box>
+            <Button  variant="contained" style={{ backgroundColor: "#FF6E6C", width:"100%", marginTop:"10px", borderRadius:"7px" }} sx={{display:{lg:"none",md:"none",sm:"none", xs:"block"}}}>
+                    View All
+                </Button>
         </Container>
     );
 }
