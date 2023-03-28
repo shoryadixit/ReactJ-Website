@@ -74,7 +74,31 @@ export default function FooterTwo() {
                 </Typography>
               </Grid>
             ))}
-            <h6
+          </Grid>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={1}
+          sm={6}
+          sx={{
+            margin: "0",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            display: "flex",
+            flexDirection: "row",
+            padding: "50px",
+            marginTop: "30px"
+          }}
+        >
+          <Stack direction="row" spacing={2} sx={{ color: "#fff" }}>
+            <InstagramIcon width="50" height="50" />
+            <FacebookIcon width="50" height="50" />
+            <TwitterIcon width="50" height="50" />
+          </Stack>
+        </Grid>
+      </Grid>
+      <h6
               style={{
                 display: "flex",
                 margin: "0 auto",
@@ -86,29 +110,6 @@ export default function FooterTwo() {
             >
               Copyright@2022
             </h6>
-          </Grid>
-        </Grid>
-        <Grid
-          item
-          xs={10}
-          md={1}
-          sm={6}
-          sx={{
-            margin: "0",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            display: "flex",
-            flexDirection: "row",
-            padding: "0px auto",
-          }}
-        >
-          <Stack direction="row" spacing={2} sx={{ color: "#fff" }}>
-            <InstagramIcon width="50" height="50" />
-            <FacebookIcon width="50" height="50" />
-            <TwitterIcon width="50" height="50" />
-          </Stack>
-        </Grid>
-      </Grid>
     </Box>
   );
 }
