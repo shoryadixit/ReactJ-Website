@@ -41,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project is a simple frontend project using reactJS and using material UI. The Hosted website link: https://reactjsfrontendmaterialui.netlify.app",
+  "main": "index.js",
+  "author": "Shorya Dixit",
+  "license": "ISC"
 }

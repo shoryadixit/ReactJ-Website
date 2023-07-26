@@ -22,6 +22,8 @@ export default function ButtonAppBar() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isSmallScreen = useMediaQuery("(max-width: 650px)");
+
   return (
     <Box>
       <AppBar
@@ -57,8 +59,8 @@ export default function ButtonAppBar() {
                 onClose={() => setOpenDrawer(false)}
                 PaperProps={{
                   style: {
-                    width: "674px",
-                    padding: "10px",
+                    width: isSmallScreen ? "100%" : "674px",
+                    paddingLeft: "40px",
                     backgroundColor: "#301E4E",
                     color: "#fff",
                     maxHeight: "auto",
@@ -74,8 +76,10 @@ export default function ButtonAppBar() {
                     color: "#E7D7F6",
                   }}
                 />
-                <List sx={{margin
-                :"20px", fontWeight: "800"}}>
+                <List sx={{
+                  margin
+                    : "20px", fontWeight: "800"
+                }}>
                   <ListItemButton>
                     <ListItemText>
                       <h3
@@ -145,19 +149,19 @@ export default function ButtonAppBar() {
                     </ListItemText>
                   </ListItemButton>
                   <ListItemButton>
-                  <ListItemButton>
-                    <Button
-                      variant="contained"
-                      fullWidth={true}
-                      style={{
-                        height: "50px",
-                        borderRadius: "15px",
-                        backgroundColor: "#FF6E6C"
-                      }}
-                    >
-                      Contained
-                    </Button>
-                  </ListItemButton>
+                    <ListItemButton>
+                      <Button
+                        variant="contained"
+                        fullWidth={true}
+                        style={{
+                          height: "50px",
+                          borderRadius: "15px",
+                          backgroundColor: "#FF6E6C"
+                        }}
+                      >
+                        Contained
+                      </Button>
+                    </ListItemButton>
                   </ListItemButton>
                 </List>
               </Drawer>
@@ -210,7 +214,7 @@ export default function ButtonAppBar() {
                 anchor="right"
                 PaperProps={{
                   style: {
-                    width: "550px",
+                    width: isSmallScreen ? "100%" : "550px",
                     padding: "10px",
                     backgroundColor: "#301E4E",
                     color: "#fff",
@@ -309,8 +313,6 @@ export default function ButtonAppBar() {
                     </Button>
                   </ListItemButton>
                 </List>
-
-
               </Drawer>
               <IconButton onClick={() => setOpenDrawer(true)}>
                 <MenuRoundedIcon

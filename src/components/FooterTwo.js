@@ -28,14 +28,21 @@ export default function FooterTwo() {
         padding: "10px",
       }}
     >
-      <Grid container spacing={3} sx={{justifyContent: "space-between"}}>
+      <Grid container spacing={3} sx={{ justifyContent: "space-between" }}>
         <Grid item xs={12} sm={3} md={2}>
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box sx={{
+            float: 'left',
+            display: 'flex',
+            padding: '25px 54px',
+            flexDirection: 'column',
+            alignItems: 'flex-start'
+          }}>
             <Typography
               variant="h6"
               sx={{
                 color: "#fff",
                 margin: "auto",
+
                 fontFamily: "Playfair Display",
                 fontSize: "32px",
               }}
@@ -99,17 +106,17 @@ export default function FooterTwo() {
         </Grid>
       </Grid>
       <h6
-              style={{
-                display: "flex",
-                margin: "0 auto",
-                fontFamily: "Playfair Display",
-                color: "#fff",
-                padding: "10px",
-                fontSize: "17px",
-              }}
-            >
-              Copyright@2022
-            </h6>
+        style={{
+          display: "flex",
+          margin: "0 auto",
+          fontFamily: "Playfair Display",
+          color: "#fff",
+          padding: "10px",
+          fontSize: "17px",
+        }}
+      >
+        Copyright@2022
+      </h6>
     </Box>
   );
 }
