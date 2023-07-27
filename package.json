@@ -48,11 +48,9 @@
   "license": "ISC",
   "devDependencies": {},
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shoryadixit/ReactJ-Website.git"
+    "type": "git"
   },
   "bugs": {
     "url": "https://github.com/shoryadixit/ReactJ-Website/issues"
-  },
-  "homepage": "https://github.com/shoryadixit/ReactJ-Website#readme"
+  }
 }
