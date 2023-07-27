@@ -187,7 +187,6 @@ const Booking = () => {
             style={{
               marginTop: "30px",
               fontSize: "35px",
-              fontFamily: "Source Sans Pro",
               fontStyle: "normal",
               color: "#494949",
               lineHeight: "44px",

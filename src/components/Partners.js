@@ -78,7 +78,6 @@ const Ourpartners = () => {
           </Typography>
           <Typography
             style={{
-              fontFamily: "Source Sans Pro",
               fontStyle: "normal",
               fontWeight: "400",
               fontSize: "25px",
