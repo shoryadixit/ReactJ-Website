@@ -1,5 +1,5 @@
 {
-  "name": "saaspect-assessment",
+  "name": "reactjs-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,5 +45,14 @@
   "description": "This project is a simple frontend project using reactJS and using material UI. The Hosted website link: https://reactjsfrontendmaterialui.netlify.app",
   "main": "index.js",
   "author": "Shorya Dixit",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoryadixit/ReactJ-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shoryadixit/ReactJ-Website/issues"
+  },
+  "homepage": "https://github.com/shoryadixit/ReactJ-Website#readme"
 }
