@@ -50,7 +50,7 @@ const useStyles = makeStyles(() => ({
 
   "@media (max-width: 430px)": {
     inner: {
-      width: "390px"
+      width: "390px",
     }
   }
 }));
