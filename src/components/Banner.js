@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
   cover: {
     display: "flex",
     backgroundImage: `url(../images/Banner_image.png)`,
-    backgroundPosition: "center",
+    backgroundPosition: "cover",
     justifyContent: "center",
     alignItems: "flexstart",
     flexDirection: "column",
@@ -30,29 +30,42 @@ const useStyles = makeStyles(() => ({
 
   inner: {
     display: "flex",
+    padding: "0px 24px 24px 24px",
     flexDirection: "column",
     alignItems: "center",
     gap: "4px",
     position: "absolute",
-    width: "100%",
+    width: "93%",
     height: "100px",
     top: "120px",
     paddingBottom: "15px",
     background: "rgba(255, 255, 255, 0.44)",
+  },
+
+  "@media (max-width: 600px)": {
+    inner: {
+      width: "90%",
+    }
+  },
+
+  "@media (max-width: 430px)": {
+    inner: {
+      width: "390px"
+    }
   }
 }));
 
 function Banner() {
   const classes = useStyles();
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
+  const isMatchLg = useMediaQuery(theme.breakpoints.down("lg"));
   return (
     <Card
       variant="outlined"
       className={classes.cover}
-      style={{ borderRadius: "0px", border: "none" }}
+      style={{ borderRadius: "0px", border: "none", width: "100%" }}
     >
-      {!isMatch ? (
+      {!isMatchLg ? (
         <div className={classes.outer}>
           <Typography
             style={{
@@ -102,7 +115,7 @@ function Banner() {
               fontSize: "30px",
               fontWeight: "700",
               textAlign: "center",
-              width: "90%"
+              width: "auto"
             }}
           >
             We are
@@ -115,7 +128,7 @@ function Banner() {
               Extensive.
             </span>
           </Typography>
-          <div style={{ display: "flex", width: "90%"}}>
+          <div style={{ display: "flex", width: "auto"}}>
             <Typography
               style={{
                 fontFamily: 'Playfair Display',
@@ -126,7 +139,7 @@ function Banner() {
                 alignItems: "center",
                 fontWeight: "500",
                 fontSize: "24px",
-                margin: "0 auto",
+                marginRight: "auto",
               }}
             >
               Helping you stand out in a crowded market
